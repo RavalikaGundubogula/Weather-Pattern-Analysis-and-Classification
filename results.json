@@ -1,0 +1,440 @@
+{
+ "dataset": {
+  "raw_rows": 142193,
+  "raw_cols": 22,
+  "duplicates": 45,
+  "rows_after_dedup": 142148,
+  "rows_before_dropna": 142148,
+  "rows_after_dropna": 124426,
+  "sample_size": 5000,
+  "missing_selected": {
+   "MinTemp": 592,
+   "MaxTemp": 283,
+   "Rainfall": 1403,
+   "Humidity3pm": 3565,
+   "WindSpeed3pm": 2585,
+   "Pressure3pm": 13936
+  },
+  "stations": 49,
+  "describe": {
+   "count": {
+    "MinTemp": 124426.0,
+    "MaxTemp": 124426.0,
+    "Rainfall": 124426.0,
+    "Humidity3pm": 124426.0,
+    "WindSpeed3pm": 124426.0,
+    "Pressure3pm": 124426.0
+   },
+   "mean": {
+    "MinTemp": 12.4,
+    "MaxTemp": 23.406,
+    "Rainfall": 2.338,
+    "Humidity3pm": 51.222,
+    "WindSpeed3pm": 19.081,
+    "Pressure3pm": 1015.284
+   },
+   "std": {
+    "MinTemp": 6.331,
+    "MaxTemp": 6.94,
+    "Rainfall": 8.498,
+    "Humidity3pm": 20.665,
+    "WindSpeed3pm": 8.707,
+    "Pressure3pm": 7.03
+   },
+   "min": {
+    "MinTemp": -8.2,
+    "MaxTemp": 2.6,
+    "Rainfall": 0.0,
+    "Humidity3pm": 0.0,
+    "WindSpeed3pm": 0.0,
+    "Pressure3pm": 977.1
+   },
+   "25%": {
+    "MinTemp": 7.8,
+    "MaxTemp": 18.0,
+    "Rainfall": 0.0,
+    "Humidity3pm": 36.0,
+    "WindSpeed3pm": 13.0,
+    "Pressure3pm": 1010.5
+   },
+   "50%": {
+    "MinTemp": 12.2,
+    "MaxTemp": 22.8,
+    "Rainfall": 0.0,
+    "Humidity3pm": 52.0,
+    "WindSpeed3pm": 19.0,
+    "Pressure3pm": 1015.3
+   },
+   "75%": {
+    "MinTemp": 17.0,
+    "MaxTemp": 28.4,
+    "Rainfall": 0.675,
+    "Humidity3pm": 65.0,
+    "WindSpeed3pm": 24.0,
+    "Pressure3pm": 1020.0
+   },
+   "max": {
+    "MinTemp": 33.9,
+    "MaxTemp": 48.1,
+    "Rainfall": 371.0,
+    "Humidity3pm": 100.0,
+    "WindSpeed3pm": 87.0,
+    "Pressure3pm": 1039.6
+   },
+   "skewness": {
+    "MinTemp": 0.05,
+    "MaxTemp": 0.341,
+    "Rainfall": 10.068,
+    "Humidity3pm": -0.004,
+    "WindSpeed3pm": 0.642,
+    "Pressure3pm": -0.055
+   }
+  },
+  "corr": {
+   "MinTemp": {
+    "MinTemp": 1.0,
+    "MaxTemp": 0.727,
+    "Rainfall": 0.109,
+    "Humidity3pm": 0.027,
+    "WindSpeed3pm": 0.176,
+    "Pressure3pm": -0.458
+   },
+   "MaxTemp": {
+    "MinTemp": 0.727,
+    "MaxTemp": 1.0,
+    "Rainfall": -0.071,
+    "Humidity3pm": -0.497,
+    "WindSpeed3pm": 0.045,
+    "Pressure3pm": -0.422
+   },
+   "Rainfall": {
+    "MinTemp": 0.109,
+    "MaxTemp": -0.071,
+    "Rainfall": 1.0,
+    "Humidity3pm": 0.253,
+    "WindSpeed3pm": 0.062,
+    "Pressure3pm": -0.126
+   },
+   "Humidity3pm": {
+    "MinTemp": 0.027,
+    "MaxTemp": -0.497,
+    "Rainfall": 0.253,
+    "Humidity3pm": 1.0,
+    "WindSpeed3pm": 0.032,
+    "Pressure3pm": 0.052
+   },
+   "WindSpeed3pm": {
+    "MinTemp": 0.176,
+    "MaxTemp": 0.045,
+    "Rainfall": 0.062,
+    "Humidity3pm": 0.032,
+    "WindSpeed3pm": 1.0,
+    "Pressure3pm": -0.258
+   },
+   "Pressure3pm": {
+    "MinTemp": -0.458,
+    "MaxTemp": -0.422,
+    "Rainfall": -0.126,
+    "Humidity3pm": 0.052,
+    "WindSpeed3pm": -0.258,
+    "Pressure3pm": 1.0
+   }
+  },
+  "pca_var": [
+   0.3624083563480863,
+   0.26842855068679516
+  ]
+ },
+ "kmeans_table": [
+  {
+   "k": 2,
+   "inertia": 22501.26170516754,
+   "silhouette": 0.22955029610131877,
+   "davies_bouldin": 1.630541980530866
+  },
+  {
+   "k": 3,
+   "inertia": 18168.557197774237,
+   "silhouette": 0.2486234842556507,
+   "davies_bouldin": 1.355330776618603
+  },
+  {
+   "k": 4,
+   "inertia": 16036.978040190968,
+   "silhouette": 0.21831218365040414,
+   "davies_bouldin": 1.5158368087799945
+  },
+  {
+   "k": 5,
+   "inertia": 14647.653504260028,
+   "silhouette": 0.212640890363868,
+   "davies_bouldin": 1.4594884911482868
+  },
+  {
+   "k": 6,
+   "inertia": 13470.969790233781,
+   "silhouette": 0.1849169135681931,
+   "davies_bouldin": 1.437404994464815
+  },
+  {
+   "k": 7,
+   "inertia": 12666.482649607911,
+   "silhouette": 0.18229788954040177,
+   "davies_bouldin": 1.4488888364097927
+  },
+  {
+   "k": 8,
+   "inertia": 11943.742679962541,
+   "silhouette": 0.18265595833007991,
+   "davies_bouldin": 1.4410469811174114
+  },
+  {
+   "k": 9,
+   "inertia": 11396.059872739708,
+   "silhouette": 0.18055251780902176,
+   "davies_bouldin": 1.441822849827546
+  },
+  {
+   "k": 10,
+   "inertia": 10902.595606153594,
+   "silhouette": 0.16757119367795636,
+   "davies_bouldin": 1.45493584312223
+  }
+ ],
+ "best_k": 3,
+ "hier_table": [
+  {
+   "k": 2,
+   "silhouette": 0.1706582283811351,
+   "davies_bouldin": 1.8933947782380236
+  },
+  {
+   "k": 3,
+   "silhouette": 0.1919256861157563,
+   "davies_bouldin": 1.5796549729444884
+  },
+  {
+   "k": 4,
+   "silhouette": 0.160208714032067,
+   "davies_bouldin": 1.613745148977166
+  },
+  {
+   "k": 5,
+   "silhouette": 0.11192700095092323,
+   "davies_bouldin": 1.7496759307710463
+  },
+  {
+   "k": 6,
+   "silhouette": 0.11546539174683433,
+   "davies_bouldin": 1.7337735858422942
+  },
+  {
+   "k": 7,
+   "silhouette": 0.10855695605843628,
+   "davies_bouldin": 1.7360010646830262
+  },
+  {
+   "k": 8,
+   "silhouette": 0.10479019804078554,
+   "davies_bouldin": 1.6736222400052665
+  },
+  {
+   "k": 9,
+   "silhouette": 0.10869404421974037,
+   "davies_bouldin": 1.6497810423301895
+  },
+  {
+   "k": 10,
+   "silhouette": 0.0868265949809626,
+   "davies_bouldin": 1.6389752447625834
+  }
+ ],
+ "best_hc_k": 3,
+ "dbscan_eps": 1.2,
+ "dbscan_min_samples": 5,
+ "dbscan_valid_settings": 5,
+ "dbscan_top": [
+  {
+   "eps": 1.2,
+   "min_samples": 5,
+   "clusters": 2,
+   "noise": 85,
+   "noise_percent": 1.7,
+   "silhouette": 0.3102123397014708,
+   "davies_bouldin": 0.7958475243239486
+  },
+  {
+   "eps": 0.9,
+   "min_samples": 5,
+   "clusters": 2,
+   "noise": 414,
+   "noise_percent": 8.28,
+   "silhouette": 0.255811387116748,
+   "davies_bouldin": 0.7391637416087621
+  },
+  {
+   "eps": 1.0,
+   "min_samples": 5,
+   "clusters": 3,
+   "noise": 250,
+   "noise_percent": 5.0,
+   "silhouette": 0.25216354585772255,
+   "davies_bouldin": 0.626005807499371
+  },
+  {
+   "eps": 0.9,
+   "min_samples": 10,
+   "clusters": 2,
+   "noise": 739,
+   "noise_percent": 14.78,
+   "silhouette": 0.20790833799835903,
+   "davies_bouldin": 0.8462098035851013
+  },
+  {
+   "eps": 0.8,
+   "min_samples": 5,
+   "clusters": 10,
+   "noise": 747,
+   "noise_percent": 14.94,
+   "silhouette": 0.04113690567147989,
+   "davies_bouldin": 0.840435067010905
+  }
+ ],
+ "results": [
+  {
+   "Algorithm": "K-Means",
+   "Clusters": 3,
+   "Noise Points": 0,
+   "Silhouette": 0.2486234842556507,
+   "Davies-Bouldin": 1.355330776618603
+  },
+  {
+   "Algorithm": "Agglomerative (Ward)",
+   "Clusters": 3,
+   "Noise Points": 0,
+   "Silhouette": 0.1919256861157563,
+   "Davies-Bouldin": 1.5796549729444884
+  },
+  {
+   "Algorithm": "DBSCAN",
+   "Clusters": 2,
+   "Noise Points": 85,
+   "Silhouette": 0.3102123397014708,
+   "Davies-Bouldin": 0.7958475243239486
+  }
+ ],
+ "profiles": {
+  "K-Means": [
+   {
+    "cluster": 0,
+    "Days": 820,
+    "MinTemp": 14.051585365853658,
+    "MaxTemp": 20.591097560975612,
+    "Rainfall": 13.89890243902439,
+    "Humidity3pm": 70.54146341463415,
+    "WindSpeed3pm": 21.970731707317075,
+    "Pressure3pm": 1011.9332926829269,
+    "Interpretation": "Rainy (Mild, Humid)"
+   },
+   {
+    "cluster": 1,
+    "Days": 2002,
+    "MinTemp": 16.704645354645354,
+    "MaxTemp": 29.634215784215783,
+    "Rainfall": 0.199000999000999,
+    "Humidity3pm": 40.5964035964036,
+    "WindSpeed3pm": 20.71828171828172,
+    "Pressure3pm": 1011.4241758241758,
+    "Interpretation": "Hot / Dry"
+   },
+   {
+    "cluster": 2,
+    "Days": 2178,
+    "MinTemp": 7.925619834710743,
+    "MaxTemp": 19.01643709825528,
+    "Rainfall": 0.35615243342516073,
+    "Humidity3pm": 53.46877869605142,
+    "WindSpeed3pm": 16.27548209366391,
+    "Pressure3pm": 1019.9353535353537,
+    "Interpretation": "Cool / Moderate humidity"
+   }
+  ],
+  "Agglomerative (Ward)": [
+   {
+    "cluster": 0,
+    "Days": 1828,
+    "MinTemp": 17.350984682713346,
+    "MaxTemp": 28.99682713347921,
+    "Rainfall": 0.4546498905908096,
+    "Humidity3pm": 46.334792122538296,
+    "WindSpeed3pm": 21.712253829321664,
+    "Pressure3pm": 1010.9745076586432,
+    "Interpretation": "Hot / Moderate humidity"
+   },
+   {
+    "cluster": 1,
+    "Days": 2362,
+    "MinTemp": 8.608467400508044,
+    "MaxTemp": 20.609398814563928,
+    "Rainfall": 0.17222692633361558,
+    "Humidity3pm": 49.49280270956816,
+    "WindSpeed3pm": 16.30016934801016,
+    "Pressure3pm": 1018.8664267569856,
+    "Interpretation": "Mild / Moderate humidity"
+   },
+   {
+    "cluster": 2,
+    "Days": 810,
+    "MinTemp": 12.56320987654321,
+    "MaxTemp": 19.684691358024693,
+    "Rainfall": 13.991728395061727,
+    "Humidity3pm": 66.63086419753087,
+    "WindSpeed3pm": 20.68024691358025,
+    "Pressure3pm": 1014.138024691358,
+    "Interpretation": "Rainy (Cool, Humid)"
+   }
+  ],
+  "DBSCAN": [
+   {
+    "cluster": -1,
+    "Days": 85,
+    "MinTemp": 13.256470588235294,
+    "MaxTemp": 21.367058823529412,
+    "Rainfall": 29.501176470588234,
+    "Humidity3pm": 65.21176470588236,
+    "WindSpeed3pm": 32.576470588235296,
+    "Pressure3pm": 1005.3564705882353,
+    "Interpretation": "Noise / unusual days"
+   },
+   {
+    "cluster": 0,
+    "Days": 4906,
+    "MinTemp": 12.437912759885855,
+    "MaxTemp": 23.58100285364859,
+    "Rainfall": 2.047492865878516,
+    "Humidity3pm": 50.82022013860579,
+    "WindSpeed3pm": 18.70362821035467,
+    "Pressure3pm": 1015.4059315124338,
+    "Interpretation": "Mild / Moderate humidity"
+   },
+   {
+    "cluster": 1,
+    "Days": 9,
+    "MinTemp": 8.866666666666667,
+    "MaxTemp": 13.955555555555556,
+    "Rainfall": 2.066666666666667,
+    "Humidity3pm": 78.44444444444444,
+    "WindSpeed3pm": 45.888888888888886,
+    "Pressure3pm": 1004.3222222222222,
+    "Interpretation": "Cool / Humid"
+   }
+  ]
+ },
+ "reference": {
+  "t33": 19.7,
+  "t66": 26.3,
+  "h33": 42.0,
+  "h66": 60.0,
+  "rain_mean": 2.51424
+ }
+}
